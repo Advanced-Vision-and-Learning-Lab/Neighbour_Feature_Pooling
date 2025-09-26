@@ -10,7 +10,7 @@ Neighbour Feature Pooling (NFP) is a novel pooling mechanism that captures local
 This repository provides the PyTorch Lightning implementation for training and evaluating **ResNet18, ResNet50, MobileNetV3, and ViT-Tiny backbones** with GAP, NFP, fractal, lacunarity, RADAM, and DeepTEN pooling modules.  
 
 <p align="center">
-  <img src="docs/figures/nfp_overview.png" width="600"/>
+  <img src="nfp_overview.png" width="600"/>
 </p>  
 
 ---
