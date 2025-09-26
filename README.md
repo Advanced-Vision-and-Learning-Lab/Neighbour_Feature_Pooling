@@ -111,12 +111,3 @@ If you use this repository in your research, please cite:
   year      = {2026}
 }
 ```
-
----
-
-## 🔗 Related Links  
-- 🌐 [Zenodo Dataset Record (if uploaded)](https://zenodo.org/)  
-- 📄 [arXiv Preprint (to add later)](https://arxiv.org/)  
-- 🧪 [Advanced Vision and Learning Lab](https://github.com/Advanced-Vision-and-Learning-Lab)  
-
----
