@@ -1,5 +1,5 @@
 # Neighbour Feature Pooling (NFP)  
-**Texture-Aware Pooling for Remote Sensing and Plant Phenotyping**  
+**Texture-Aware Pooling for Remote Sensing**  
 
  *By Fahimeh Orvati Nia, Amirmohammad Mohammadi, Salim Al Kharsa, Pragati Naikare, Zigfried Hampel-Arias, and Joshua Peeples*  
 
