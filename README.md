@@ -71,9 +71,11 @@ python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data
 
 ---
 
-##  Repository Structure  
+---
 
-```
+## Repository Structure  
+
+```text
 Neighbour_Feature_Pooling/
 ├── demo.py              # Main training script
 ├── models/              # ResNet, MobileNet, ViT variants + pooling modules
@@ -82,6 +84,7 @@ Neighbour_Feature_Pooling/
 ├── Extra_files/         # Environment files + configs
 ├── requirements.txt
 └── README.md
+
 
 ```
 ---
