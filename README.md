@@ -1,11 +1,11 @@
 # Neighbour Feature Pooling (NFP)  
 **Texture-Aware Pooling for Remote Sensing**  
 
- *By Fahimeh Orvati Nia, Amirmohammad Mohammadi, Salim Al Kharsa, Pragati Naikare, Zigfried Hampel-Arias, and Joshua Peeples*  
+*By Fahimeh Orvati Nia, Amirmohammad Mohammadi, Salim Al Kharsa, Pragati Naikare, Zigfried Hampel-Arias, and Joshua Peeples*  
 
 ---
 
-##  Overview  
+## Overview  
 Neighbour Feature Pooling (NFP) is a novel pooling mechanism that captures local neighborhood similarity for improved **texture-aware classification** in remote sensing and agricultural image datasets.  
 This repository provides the PyTorch Lightning implementation for training and evaluating **ResNet18, MobileNetV3, and ViT-Tiny backbones** with GAP, NFP, fractal, lacunarity, RADAM, and DeepTEN pooling modules.  
 
@@ -15,16 +15,16 @@ This repository provides the PyTorch Lightning implementation for training and e
 
 ---
 
-##  Datasets Supported  
--  **UCMerced Land Use** (21 classes)  
--  **RESISC45** (45 classes)  
--  **GTOS-Mobile** (31 classes)  
--  **PlantVillage** (15–38 classes)  
--  **EuroSAT** (10 classes, 13 spectral bands)  
+## Datasets Supported  
+- **UCMerced Land Use** (21 classes)  
+- **RESISC45** (45 classes)  
+- **GTOS-Mobile** (31 classes)  
+- **PlantVillage** (15–38 classes)  
+- **EuroSAT** (10 classes, 13 spectral bands)  
 
 ---
 
-##  Installation  
+## Installation  
 
 ```bash
 # clone the repo
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ---
 
-##  Training Demo  
+## Training Demo  
 
 Example: train **ResNet18 (GAP only) on EuroSAT**  
 
@@ -55,21 +55,24 @@ DATA_DIR="data/EuroSAT"
 
 mkdir -p logs/${EXPERIMENT_NAME}
 
-python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data_dir ${DATA_DIR}     --model_type resnet18     --model_variant gap_only
-
+python demo.py \
+    --name ${EXPERIMENT_NAME} \
+    --dataset ${DATASET} \
+    --data_dir ${DATA_DIR} \
+    --model_type resnet18 \
+    --model_variant gap_only
+```
 
 ---
 
-##  Example Results  
+## Example Results  
 
-| Model          | Dataset     | Pooling        | Accuracy (%) |
-|----------------|-------------|----------------|--------------|
-| ResNet18       | UCMerced    | GAP            | 87.1         |
-| ResNet18       | UCMerced    | **NFP (cosine)** | **91.5**     |
-| MobileNetV3    | GTOS-Mobile | RADAM          | 78.3         |
-| ViT-Tiny       | PlantVillage| Lacunarity     | 95.0         |
-
-
+| Model        | Dataset     | Pooling          | Accuracy (%) |
+|--------------|-------------|------------------|--------------|
+| ResNet18     | UCMerced    | GAP              | 87.1         |
+| ResNet18     | UCMerced    | **NFP (cosine)** | **91.5**     |
+| MobileNetV3  | GTOS-Mobile | RADAM            | 78.3         |
+| ViT-Tiny     | PlantVillage| Lacunarity       | 95.0         |
 
 ---
 
@@ -84,16 +87,16 @@ Neighbour_Feature_Pooling/
 ├── Extra_files/         # Environment files + configs
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
-
-##  License  
+## License  
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
 
 ---
 
-##  Citation  
+## Citation  
 
 If you use this repository in your research, please cite:  
 
