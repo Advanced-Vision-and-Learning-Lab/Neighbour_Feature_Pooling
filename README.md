@@ -74,17 +74,18 @@ python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data
 ##  Repository Structure  
 
 ```
-Neighbour_Feature_Pooling
-│── demo.py                # Main training script
-│── models/                # ResNet, MobileNet, ViT variants + pooling modules
-│── datasetsnew/           # PyTorch Lightning DataModules
-│── lightning_wrappers/    # Lightning Wrapper for training/evaluation
-│── Extra_files/           # Environment + configs
-│── requirements.txt
-│── README.md
+Neighbour_Feature_Pooling/
+├── demo.py              # Main training script
+├── models/              # ResNet, MobileNet, ViT variants + pooling modules
+├── datasetsnew/         # PyTorch Lightning DataModules
+├── lightning_wrappers/  # Lightning wrapper for training/evaluation
+├── Extra_files/         # Environment files + configs
+├── requirements.txt
+└── README.md
+
 ```
 ---
----
+
 
 ##  License  
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
