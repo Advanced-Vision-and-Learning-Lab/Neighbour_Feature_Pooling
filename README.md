@@ -7,7 +7,7 @@
 
 ##  Overview  
 Neighbour Feature Pooling (NFP) is a novel pooling mechanism that captures local neighborhood similarity for improved **texture-aware classification** in remote sensing and agricultural image datasets.  
-This repository provides the PyTorch Lightning implementation for training and evaluating **ResNet18, ResNet50, MobileNetV3, and ViT-Tiny backbones** with GAP, NFP, fractal, lacunarity, RADAM, and DeepTEN pooling modules.  
+This repository provides the PyTorch Lightning implementation for training and evaluating **ResNet18, MobileNetV3, and ViT-Tiny backbones** with GAP, NFP, fractal, lacunarity, RADAM, and DeepTEN pooling modules.  
 
 <p align="center">
   <img src="nfp_overview.png" width="800"/>
@@ -21,8 +21,6 @@ This repository provides the PyTorch Lightning implementation for training and e
 -  **GTOS-Mobile** (31 classes)  
 -  **PlantVillage** (15–38 classes)  
 -  **EuroSAT** (10 classes, 13 spectral bands)  
--  **MSTAR** (SAR imagery, 6 classes)  
--  **CIFAR-10** (baseline sanity check)  
 
 ---
 
@@ -58,13 +56,7 @@ DATA_DIR="data/EuroSAT"
 mkdir -p logs/${EXPERIMENT_NAME}
 
 python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data_dir ${DATA_DIR}     --model_type resnet18     --model_variant gap_only
-```
 
-Results (logs + checkpoints) are saved in:  
-```bash
-logs/${DATASET}/${EXPERIMENT_NAME}
-checkpoints/${DATASET}/${EXPERIMENT_NAME}
-```
 
 ---
 
