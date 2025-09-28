@@ -72,7 +72,7 @@ python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data
 ---
 
 ##  Repository Structure  
-s
+
 ```
 Neighbour_Feature_Pooling
 │── demo.py                # Main training script
