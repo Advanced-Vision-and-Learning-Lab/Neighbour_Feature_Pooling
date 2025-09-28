@@ -30,7 +30,7 @@ This repository provides the PyTorch Lightning implementation for training and e
 
 ```bash
 # clone the repo
-git clone https://github.com/fahimehorvatinia/Neighbour_Feature_Pooling_Clean.git
+git clone https://github.com/fahimehorvatinia/Neighbour_Feature_Pooling.git
 cd Neighbour_Feature_Pooling_Clean
 
 # create environment
@@ -104,10 +104,5 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 If you use this repository in your research, please cite:  
 
 ```bibtex
-@inproceedings{orvatinia2026nfp,
-  title     = {Neighbour Feature Pooling for Remote Sensing Image Classification},
-  author    = {Orvati Nia, Fahimeh and Mohammadi, Amirmohammad and Al Kharsa, Salim and Naikare, Pragati and Hampel-Arias, Zigfried and Peeples, Joshua},
-  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year      = {2026}
-}
+TBH
 ```
