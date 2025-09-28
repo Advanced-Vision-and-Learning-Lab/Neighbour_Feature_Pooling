@@ -69,7 +69,7 @@ python demo.py     --name ${EXPERIMENT_NAME}     --dataset ${DATASET}     --data
 | MobileNetV3    | GTOS-Mobile | RADAM          | 78.3         |
 | ViT-Tiny       | PlantVillage| Lacunarity     | 95.0         |
 
----
+
 
 ---
 
@@ -85,8 +85,6 @@ Neighbour_Feature_Pooling/
 ├── requirements.txt
 └── README.md
 
-
-```
 ---
 
 
