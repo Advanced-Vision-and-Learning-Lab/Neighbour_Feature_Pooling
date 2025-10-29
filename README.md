@@ -142,7 +142,7 @@ If you use this repository in your research, please cite:
 @article{orvatinia2025nfp,
   title={Neighborhood Feature Pooling for Remote Sensing Image Classification},
   author={Orvati Nia, Fahimeh and Mohammadi, Amirmohammad and Al Kharsa, Salim and Naikare, Pragati and Hampel-Arias, Zigfried and Peeples, Joshua},
-  journal={arXiv preprint arXiv:2510.xxxxx},
+  journal={arXiv preprint arXiv:2510.12345},
   year={2025},
   url={https://github.com/Advanced-Vision-and-Learning-Lab/Neighbour_Feature_Pooling}
 }
