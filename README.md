@@ -80,14 +80,52 @@ python demo.py \
 
 ```text
 Neighbour_Feature_Pooling/
-├── demo.py              # Main training script
-├── models/              # ResNet, MobileNet, ViT variants + pooling modules
-├── datasetsnew/         # PyTorch Lightning DataModules
-├── lightning_wrappers/  # Lightning wrapper for training/evaluation
-├── Extra_files/         # Environment files + configs
-├── requirements.txt
-└── README.md
+├── demo.py                    # Main training script - orchestrates experiments with different models and datasets
+├── DataModules.py             # PyTorch Lightning DataModules for all supported datasets (UCMerced, RESISC45, GTOS-Mobile, PlantVillage, EuroSAT)
+├── models/                    # Neural network architectures and pooling modules
+│   ├── __init__.py           # Package initialization
+│   ├── resnet18.py           # ResNet18 variants with GAP/NFP/MLP fusion heads
+│   ├── mobilenetv3.py        # MobileNetV3 variants with various pooling strategies
+│   ├── vittiny.py            # Vision Transformer Tiny implementations
+│   ├── vittiny_models_new.py # Enhanced ViT-Tiny models with NFP integration
+│   ├── NFP_Pooling.py        # Core Neighbour Feature Pooling implementation
+│   ├── nfp_heads.py          # NFP head modules for different architectures
+│   ├── Fractal_Pooling.py    # Fractal dimension-based pooling module
+│   ├── Lacunarity_Pooling.py # Lacunarity-based texture pooling
+│   ├── radam_pooling.py      # RADAM (Random Adaptive Max) pooling
+│   ├── deepten.py            # DeepTEN texture analysis pooling
+│   ├── texture_pooling.py    # General texture-aware pooling utilities
+│   ├── RNN.py                # Recurrent neural network components
+│   └── pooling/              # Core pooling implementations
+│       └── nfp.py            # Main NFP algorithm with cosine similarity measures
+├── lightning_wrappers/        # PyTorch Lightning integration
+│   └── Lightning_Wrapper.py # Training/evaluation wrapper with metrics, logging, and callbacks
+├── requirements.txt          # Python dependencies (PyTorch, Lightning, geospatial libs, etc.)
+├── run_nfp_experiments_new.slurm # SLURM batch script for HPC cluster execution
+├── RAE_LCG_weights.pkl      # Pre-trained weights for RAE-LCG texture features
+├── nfp_overview.png         # Architecture overview diagram
+└── README.md                # This documentation file
 ```
+
+### Key Components Explained
+
+**Core Files:**
+- `demo.py`: Main entry point that handles command-line arguments, model instantiation, and training orchestration
+- `DataModules.py`: Contains PyTorch Lightning DataModules for all 5 supported datasets with proper data loading, augmentation, and preprocessing
+
+**Models Directory:**
+- **Architecture Files**: `resnet18.py`, `mobilenetv3.py`, `vittiny.py` contain backbone networks with various pooling head configurations
+- **Pooling Modules**: Multiple texture-aware pooling implementations including the novel NFP, fractal, lacunarity, RADAM, and DeepTEN
+- **NFP Implementation**: `pooling/nfp.py` contains the core Neighbour Feature Pooling algorithm using cosine similarity measures
+
+**Lightning Integration:**
+- `Lightning_Wrapper.py`: Handles training loops, validation, metrics computation, confusion matrices, and experiment logging
+
+**Dependencies:**
+- Core ML: PyTorch, PyTorch Lightning, timm, torchmetrics
+- Geospatial: torchgeo, rasterio for remote sensing datasets
+- Visualization: matplotlib, seaborn, tensorboard
+- Data augmentation: albumentations, kornia
 
 ---
 
