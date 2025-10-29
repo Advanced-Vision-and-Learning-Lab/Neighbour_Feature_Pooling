@@ -6,7 +6,7 @@
 ---
 
 ## Overview  
-Neighbour Feature Pooling (NFP) is a novel pooling mechanism that captures local neighborhood similarity for improved **texture-aware classification** in remote sensing and agricultural image datasets.  
+Neighborhood Feature Pooling (NFP) is a novel pooling mechanism that captures local neighborhood similarity for improved **texture-aware classification** in remote sensing and agricultural image datasets.  
 This repository provides the PyTorch Lightning implementation for training and evaluating **ResNet18, MobileNetV3, and ViT-Tiny backbones** with GAP, NFP, fractal, lacunarity, RADAM, and DeepTEN pooling modules.  
 
 <p align="center">
