@@ -28,7 +28,7 @@ This repository provides the PyTorch Lightning implementation for training and e
 
 ```bash
 # clone the repo
-git clone https://github.com/fahimehorvatinia/Neighbour_Feature_Pooling.git
+git clone https://github.com/Advanced-Vision-and-Learning-Lab/Neighbour_Feature_Pooling.git
 cd Neighbour_Feature_Pooling_Clean
 
 # create environment
