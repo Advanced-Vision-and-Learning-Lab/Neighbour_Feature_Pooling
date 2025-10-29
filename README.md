@@ -1,4 +1,4 @@
-# Neighbour Feature Pooling (NFP)  
+# Neighborhood Feature Pooling (NFP)  
 **Texture-Aware Pooling for Remote Sensing**  
 
 *By Fahimeh Orvati Nia, Amirmohammad Mohammadi, Salim Al Kharsa, Pragati Naikare, Zigfried Hampel-Arias, and Joshua Peeples*  
